@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ratings</title>
   <!-- Link to the correct css file -->
-  <link rel="stylesheet" href="..." />
+  <link rel="stylesheet" href="/ratings.css" />
   <!-- Link to the correct js file -->
-  <script src="..." defer></script>
+  <script src="/ratingScript.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
@@ -16,9 +16,9 @@
     </div>
     <div class="nav-links">
       <!-- Link to the route for home -->
-      <a href="/ratings.css">Teachers</a>
+      <a href="/">Teachers</a>
       <!-- Link to the route for ratings and comments -->
-      <a href="/ratingScript.js">Comments & Ratings</a>
+      <a href="/ratings">Comments & Ratings</a>
     </div>
   </nav>
 
@@ -32,10 +32,15 @@
       <!-- Inside of the input tag for rating add the attributes min="1" max="5" -->
       
 <form>
-  <input type = "text" name = "name" required/> <br>
-  <input type = "text" name = "department" required/> <br>
-  <input type = "text" name = "image" required/> <br>
-  <button type = "submit">Add Teacher</button>
+  <label>Username:</label>
+  <input type = "text" name = "username" required/> <br>
+   <label>Teacher:</label>
+  <input type = "text" name = "teacher" required/> <br>
+   <label>Comment:</label>
+  <input type = "text" name = "comment" required/> <br>
+   <label>rating:</label>
+  <input type = "text" name = "rating" required/> <br>
+  <button type = "submit">Submit Rating</button>
 </form>
 
       
